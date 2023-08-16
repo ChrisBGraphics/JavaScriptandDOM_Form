@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Chris Borowski -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="JavaScript/myScript.js"></script>
+    <link rel="stylesheet" href="css/myStyle.css">
+    <style>
+        .required::after {
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <form action="#">
+            <h2> Create an account</h2>
+            <p>
+                <label class="required"> First Name</label> <br>
+                <input type="text" name="firstname" id="fname"> <br>
+                <label class="required"> Last Name</label> <br>
+                <input type="text" name="lastname" id="lname"> <br>
+                <label> Age</label> <br>
+                <input type="text" name="num" id="number"> <br>
+                <label> Email</label> <br>
+                <input type="email" name="mail" id="email"> <br>
+                <label> Password</label> <br>
+                <input type="password" name="num" id="password"> <br>
+
+                <button type="button" onclick="validate()">Sign Up</button>
+            </p>
+            <p id="valid"></p>
+        </form>
+    </div>
+</body>
+
+</html>
